@@ -1,0 +1,174 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+:root {
+  --dark-category-accent-color: #eac645;
+  --light-category-accent-color: #4f2ee8;
+  --dark-background-color: #202024;
+  --light-background-color: #f6f6f6;
+  --text-color: #111111;
+  --light-lift-color: #e0e0e0;
+  --titles-color: #b4afaf;
+  --button-accent-text-color: #ffffff;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text-color);
+  background-color: #f3f3f3;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.main-wrapper {
+  padding-top: 104px;
+}
+
+.container {
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.accent-color {
+  color: var(--light-category-accent-color);
+}
+
+.hidden {
+  display: none;
+  visibility: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* buttons: SEE MORE, ADD TO SHOPPING LIST, REMOVE FROM THE SHOPPING LIST*/
+
+.buttons {
+  font-size: 18px;
+  font-style: bold;
+  line-height: calc(24 / 18);
+  letter-spacing: -1%;
+  color: var(--text-color);
+  font-family: inherit;
+  padding: 20px 0px;
+  border-radius: 40px;
+  border: 2px;
+}
+
+.buttons:hover,
+.buttons:focus {
+  background-color: var(--light-category-accent-color);
+  color: var(--button-accent-text-color);
+  font-style: normal;
+}
+
+/* buttons HOME, SHOPPING LIST */
+
+.header-buttons-light {
+  font-size: 14px;
+  font-style: normal;
+  line-height: calc(18 / 14);
+  letter-spacing: -4%;
+  color: var(--text-color);
+  font-family: inherit;
+  padding: 8px 16px;
+  border-radius: 36px;
+  border: 2px;
+  display: flex;
+  gap: 8px;
+}
+
+.header-buttons-light:hover,
+.header-buttons-light:focus {
+  background-color: var(--dark-category-accent-color);
+  font-style: bold;
+}
+
+.header-buttons-dark {
+  font-size: 14px;
+  font-style: normal;
+  line-height: calc(18 / 14);
+  letter-spacing: -4%;
+  color: var(--button-accent-text-color);
+  font-family: inherit;
+  padding: 8px 16px;
+  border-radius: 36px;
+  border: 2px;
+  display: flex;
+  gap: 8px;
+}
+
+.header-buttons-dark:hover,
+.header-buttons-dark:focus {
+  background-color: var(--dark-category-accent-color);
+  color: var(--text-color);
+  font-style: bold;
+}
+
+/* pagination buttons */
+
+/* .menu-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+} */
+
+@media screen and (min-width: 768px) {
+  .main-wrapper {
+    padding-top: 112px;
+  }
+
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 24px;
+  }
+
+  .main-box {
+    display: flex;
+    gap: 40px;
+  }
+
+  .main-container {
+    max-width: 1440px;
+    padding: 0 24px;
+    margin: 0 auto;
+  }
+}

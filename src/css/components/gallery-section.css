@@ -1,0 +1,62 @@
+.gallery-section {
+  width: 100%;
+  padding-top: 40px;
+}
+
+.gallery-container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.gallery-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: -0.04em;
+}
+
+.accent-color {
+  color: var(--light-category-accent-color);
+}
+
+.no-books-message {
+  display: flex;
+  height: 24px;
+  align-items: center;
+  gap: 4px;
+
+  font-size: 20px;
+  color: red;
+}
+
+.no-books-message > span {
+  font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-section {
+    padding-top: 100px;
+  }
+
+  .gallery-container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .gallery-title {
+    font-size: 48px;
+    line-height: 1.08;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .gallery-section {
+    padding-top: 0;
+  }
+
+  .gallery-container {
+    max-width: 996px;
+    padding: 0;
+  }
+}

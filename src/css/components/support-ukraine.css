@@ -1,0 +1,216 @@
+.support-ukraine-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 352px;
+  width: 335px;
+  padding-bottom: 20px;
+  padding-top: 24px;
+  padding-left: 40px;
+  padding-right: 40px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: radial-gradient(
+    189.32% 190.93% at 59.76% -23.42%,
+    #4f2ee8 18.03%,
+    #fff 100%
+  );
+  box-shadow: 0px 10px 10px 0px rgba(245, 245, 247, 0.1);
+}
+
+.support-ukraine-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.support-ukraine-title {
+  display: inline;
+  margin-right: 12px;
+  color: var(--button-accent-text-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.04em;
+}
+
+.support-ukraine-emblem {
+  width: 20px;
+  height: 32px;
+  align-items: center;
+  animation: pulse 1700ms ease infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.fund-list-visible {
+  width: 170px;
+  height: 188px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.fund-list {
+  width: 159px;
+  counter-reset: item;
+  color: var(--button-accent-text-color);
+  font-size: 14px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+}
+
+.fund::before {
+  counter-increment: item;
+  content: counter(item, decimal-leading-zero);
+}
+
+.fund {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+
+.fund-image {
+  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);
+  height: 32px;
+  object-fit: contain;
+}
+
+.fund-image:hover,
+.fund-image:focus {
+  transition: transform 500ms ease-out;
+  transform: scale(1.1);
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .support-ukraine-container {
+    height: 472px;
+    padding-bottom: 14px;
+  }
+
+  .fund-list-visible {
+    height: 320px;
+    margin-bottom: 32px;
+  }
+
+  .fund {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .support-ukraine-container {
+    width: 356px;
+    height: 490px;
+    padding-bottom: 24px;
+  }
+  .fund-list-visible {
+    height: 300px;
+  }
+}
+
+
+
+/* --------------------------Swiper Button------------------------------ */
+
+.support-ukraine-button {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* support-ukraine button DOWN */
+
+.fund-scroll-down {
+    width: 32px;
+    height: 32px;
+    color: var(--button-accent-text-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    margin: 0 auto;
+  }
+  
+  .fund-scroll-down:hover,
+  .fund-scroll-down:focus {
+    background-color: var(--light-background-color);
+    transition: background-color 0.2s ease-in;
+  }
+
+.button-arrow-down {
+  fill: var(--light-category-accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  transform: scale(0.7);
+}
+
+/* support-ukraine button UP */
+
+.fund-scroll-up {
+  width: 32px;
+  height: 32px;
+  background-color: var(--light-category-accent-color);
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+
+.button-arrow-up {
+  fill: var(--button-accent-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(180deg) scale(0.7);
+  width: 32px;
+  height: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .fund-scroll-down {
+    width: 38px;
+    height: 38px;
+  }
+
+  .fund-scroll-up {
+    width: 38px;
+    height: 38px;
+  }
+
+  .button-arrow-down,
+  .button-arrow-up {
+    width: 38px;
+    height: 38px;
+  }
+}

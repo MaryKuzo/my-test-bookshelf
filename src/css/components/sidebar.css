@@ -1,0 +1,43 @@
+a {
+  text-decoration: none;
+}
+
+.sidebar-container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar-container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    gap: 32px;
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .sidebar-container {
+    width: 356px;
+    padding: 0;
+  }
+
+  .sidebar {
+    flex-direction: column;
+    width: 356px;
+    justify-content: start;
+    gap: 86px;
+  }
+}
