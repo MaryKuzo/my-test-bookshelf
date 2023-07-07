@@ -11,3 +11,6 @@ import './js/team-modal';
 import './js/header';
 import './js/modal-book-info';
 import './js/support-ukraine';
+import './js/auth-markup';
+import './js/authorization'
+import './js/signin-markup'

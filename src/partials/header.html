@@ -40,13 +40,22 @@
     </div>
   </div>
 
-  <div class="authorization">
-    <button type="submit" class="btn-user">
-      <svg class="btn-user-img" width="37" height="37">
-        <title>user</title>
-        <use href="/src/images/sprite.svg#user"></use>
+  <button type="button" class="user-sign-up js-authorization">
+    <span class="user-sign-up-text">Sign up</span>
+    <svg width="23" height="26" class="user-sign-up-icon">
+      <use href="./images/sprite.svg#icon-login-arrow"></use>
+    </svg>
+  </button>
+
+  <div class="logout-wdw logouthidn js-logout js-close">
+    <p class="signout-text">
+      Signed in as:<span class="signout-name js-name"></span>
+    </p>
+    <button type="button" class="signout-btn js-signOut">
+      Log out
+      <svg width="23" height="26" class="user-sign-up-icon">
+        <use href="./images/sprite.svg#icon-login-arrow"></use>
       </svg>
-      <span class="btn-user-label">Welcome</span>
     </button>
   </div>
 
@@ -80,8 +89,9 @@
         >Shopping list
         <svg class="mob-menu__icon" width="20px" height="20px">
           <title>shoping_list</title>
-          <use href="/src/images/sprite.svg#icon-uil-cart-black"></use></svg
-      ></a>
+          <use href="/src/images/sprite.svg#icon-uil-cart-black"></use>
+        </svg>
+      </a>
     </li>
   </ul>
 </div>

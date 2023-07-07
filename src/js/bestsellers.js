@@ -82,12 +82,11 @@ export function renderTopBooks(responseInitial, bookCount) {
 
 export function getBookCount() {
   let bookCount = 1;
-
-  if (document.documentElement.clientWidth >= 768) {
+if (window.innerWidth >= 768 && window.innerWidth < 1440) {
     bookCount = 3;
   }
 
-  if (document.documentElement.clientWidth >= 1440) {
+  if (window.innerWidth >= 1440) {
     bookCount = 5;
   }
 
